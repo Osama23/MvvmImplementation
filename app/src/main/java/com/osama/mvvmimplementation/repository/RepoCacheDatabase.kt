@@ -3,9 +3,10 @@ package com.osama.mvvmimplementation.repository
 import android.util.Log
 import com.osama.mvvmimplementation.data.User
 import com.osama.mvvmimplementation.validation.ValidateCache
+import javax.inject.Inject
 
-// Here we should use any framework that uses dagger to inject object
-class RepoCacheDatabase {
+// the constructor should contain instance of retrofit
+class RepoCacheDatabase @Inject constructor(){
 
     private val validateDatabase: ValidateCache = ValidateCache()
 
